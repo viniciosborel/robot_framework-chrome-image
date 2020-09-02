@@ -32,8 +32,10 @@ RUN apt-get update \
   && apt-get install -y \
     git mercurial xvfb apt \
     locales sudo openssh-client ca-certificates tar gzip parallel \
-    net-tools netcat unzip zip bzip2 gnupg curl wget make jq \
-  && pip3 install --no-cache-dir -r ./requirements.txt
+    net-tools netcat unzip zip bzip2 gnupg curl wget make jq
+   
+COPY requirements.txt /tmp/requirements.txt
+RUN pip install --no-cache-dir -r /tmp/requirements.txt
 
 RUN groupadd --gid 3434 borells \
   && useradd --uid 3434 --gid borells --shell /bin/bash --create-home borells \
