@@ -1,0 +1,9 @@
+Faker                                       
+requests                        
+robotframework                  
+robotframework-faker            
+robotframework-pythonlibcore    
+robotframework-requests         
+robotframework-seleniumlibrary  
+robotframework-sshlibrary                           
+selenium                                            
