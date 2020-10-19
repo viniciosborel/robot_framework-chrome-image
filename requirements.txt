@@ -1,6 +1,7 @@
 Faker                                       
 requests                        
-robotframework                  
+robotframework
+robotframework-appiumlibrary
 robotframework-faker            
 robotframework-pythonlibcore    
 robotframework-requests         
